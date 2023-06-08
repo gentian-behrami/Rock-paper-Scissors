@@ -24,7 +24,7 @@ class RandomPlayer(Player):
 
 class HumanPlayer(Player):
     def move(self):
-        move = input('Enter a move: ') # makes user select a player and ensures the move is valid
+        move = input("Enter a move['rock', 'paper', 'scissors']: ") # makes user select a player and ensures the move is valid
         while move not in moves:
             move = input('Invalid move, Enter a move: ')
         
